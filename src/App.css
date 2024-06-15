@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --font: 'Roboto', sans-serif;
+  --fosi: clamp(24px, 4vw, 40px);
+  --infont: 12px;
+  --CodeOne: skyblue;
+  --CodeTwo: limegreen;
+  --bg: radial-gradient(circle at 20% 0%, rgba(49, 210, 255, 0.30) 1%, transparent 40%), radial-gradient(circle at 80% 0%, rgba(49, 210, 255, 0.30) 1%, transparent 40%);
+  --trans: all 0.4s ease-in-out;
+  --br: 3px;
+  --shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border-radius: 0px;
+  font-family: var(--font);
+  font-size: var(--infont);
+  text-transform: capitalize;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  border: none;
+}
+
+body {
+  background: white;
+}
+
+a {
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: black;
+}
+
+select,
+textarea,
+input {
+  padding: 10px;
+}
+
+textarea,
+input::placeholder {
+  color: gray;
+}
+
+input,
+select,
+textarea:focus {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  transition: var(--trans);
+  display: flex;
+  width: 100px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+button:focus {
+  outline: none;
+}
+
+.wh {
+  width: 100%;
+}
+
+.outline1 {
+  outline: 1px solid blue;
+}
+
+.outline2 {
+  outline: 1px solid limegreen;
+}
+
+.outline3 {
+  outline: 1px solid orange;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexcol {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.start {
+  align-items: start;
+  justify-content: start;
+}
+
+.center-start {
+  align-items: center;
+  justify-content: start;
+}
+
+.start-center {
+  align-items: start;
+  justify-content: center;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.headingSmol {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.line {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.lineSmol {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.page {
+  background: var(--CodeOne);
+  width: 100%;
+  padding: 60px 100px;
+  gap: 20px;
+}
+
+.card{
+  background: white;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+  color:  #00aaff;
+}
+
+.img{
+  width: 200px;
+  aspect-ratio: 4/3;
+  object-fit: contain;
+  object-position: center;
+}
